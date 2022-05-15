@@ -70,23 +70,20 @@ export default {
   },
   section: {
     keyFeature: {
-      pt: [8, null, 9, null, null, 10],
       pb: ["90px", null, 9, null, null, 10, null, "165px"],
     },
     feature: {
-      pb: [8, null, 9, null, null, 10, null, "170px"],
+      pt: "180px",
     },
     news: {
       pb: [8, null, 9, null, null, 10, null, "170px"],
     },
     coreFeature: {
-      pt: [8, null, 8, "170px", null, 8, null, "175px"],
-      pb: [8, null, 9, null, null, 10, null, "170px"],
-      overflow: "hidden",
+      mt: "160px",
+      py: "130px",
     },
     testimonial: {
-      pt: [8, null, 8, "120px", null, 8, null, "145px"],
-      pb: ["90px", null, 9, null, null, 10, null, "190px"],
+      pb: ["0px", null, 9, null, null, 10, null, "140px"],
     },
     services: {
       pb: ["90px", null, 9, null, null, 10, null, "150px"],
