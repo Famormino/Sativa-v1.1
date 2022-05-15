@@ -70,26 +70,33 @@ export default {
   },
   section: {
     keyFeature: {
+      pt: [8, null, 9, null, null, 0],
       pb: ["90px", null, 9, null, null, 10, null, "165px"],
+      overflow: "hidden",
     },
     feature: {
-      pt: "180px",
+      pt: [8, null, null, null, null, 150],
+      pb: [8, null, 9, null, null, 10, null, "170px"],
+      overflow: "hidden",
     },
     news: {
       pb: [8, null, 9, null, null, 10, null, "170px"],
     },
     coreFeature: {
-      mt: "160px",
-      py: "130px",
+      pt: [8, null, 8, "120px", null, 8, null, "175px"],
+      pb: [8, null, 9, null, null, 10, null, "170px"],
+      overflow: "hidden",
     },
     testimonial: {
-      pb: ["0px", null, 9, null, null, 10, null, "140px"],
+      pt: [8, null, 8, "120px", null, 0, null, "175px"],
+      pb: ["190px", null, 9, null, null, 10, null, "190px"],
+      overflow: "hidden",
     },
     services: {
-      pb: ["90px", null, 9, null, null, 10, null, "150px"],
+      pb: ["90px", null, 9, null, null, 0, null, "150px"],
     },
     pricing: {
-      pt: [8, null, 9, null, null, 10, null, "180px"],
+      pt: [8, null, 9, null, null, 0, null, "180px"],
       pb: ["90px", null, 9, null, null, 10, null, "180px"],
     },
   },
