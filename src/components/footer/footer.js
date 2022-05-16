@@ -10,10 +10,10 @@ export default function Footer() {
     <footer sx={styles.footer}>
       <Container>
         <Box sx={styles.footer.footerBottomArea}>
-          <Link to="home">
+          <Link sx={styles.logo} to="home">
             <Image alt="Logo" src={FooterLogo} />
           </Link>
-          <Flex as="nav" sx={styles.footer.menus}>
+          <Flex as="nav" sx={styles.nav}>
             {data.map((item, i) => (
               <Link
                 key={i}
@@ -44,7 +44,7 @@ const styles = {
       borderTopColor: "border_color",
       display: "flex",
       pt: [7, null, 8],
-      pb: ["40px", null, "100px"],
+      pb: ["40px", null, "40px"],
       textAlign: "center",
       flexDirection: "column",
     },
@@ -62,24 +62,34 @@ const styles = {
       },
     },
 
-    link: {
-      fontSize: [1, "15px"],
-      color: "text",
-      fontWeight: "400",
-      mb: 2,
-      cursor: "pointer",
-      transition: "all 0.35s",
-      display: "block",
-      textDecoration: "none",
-      lineHeight: [1.5, null, 1.8],
-      px: [2, null, 4],
-      ":hover": {
-        color: "primary",
-      },
-    },
     copyright: {
-      fontSize: [1, "15px"],
+      fontSize: [1, "13px"],
       width: "100%",
     },
+  },
+  nav: {
+    mx: "auto",
+    mb: "50px",
+    display: "none",
+    "@media screen and (min-width: 1024px)": {
+      display: "block",
+    },
+    a: {
+      fontSize: 3,
+      fontWeight: "body",
+      px: 2,
+      cursor: "pointer",
+      lineHeight: "1.2",
+      transition: "all 0.15s",
+      "&:hover": {
+        color: "primary",
+      },
+      "&.active": {
+        color: "text",
+      },
+    },
+  },
+  logo: {
+    cursor: "pointer",
   },
 };
