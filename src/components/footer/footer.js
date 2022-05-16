@@ -1,25 +1,33 @@
 /** @jsx jsx */
-import {jsx, Box, Container, Image, Text} from "theme-ui";
-import {Link} from "components/link";
+import {jsx, Box, Container, Image, Text, Flex} from "theme-ui";
+import {Link} from "react-scroll";
 import FooterLogo from "assets/sativalogo.png";
 
-import data from "./footer.data";
+import data from "./../header/header.data";
 
 export default function Footer() {
   return (
     <footer sx={styles.footer}>
       <Container>
         <Box sx={styles.footer.footerBottomArea}>
-          <Link path="/">
+          <Link to="home">
             <Image alt="Logo" src={FooterLogo} />
           </Link>
-          <Box sx={styles.footer.menus}>
-            <nav>
-              {data.menuItem.map((item, i) => (
-                <Link key={i} label={item.label} path={item.path} sx={styles.footer.link} />
-              ))}
-            </nav>
-          </Box>
+          <Flex as="nav" sx={styles.footer.menus}>
+            {data.map((item, i) => (
+              <Link
+                key={i}
+                activeClass="active"
+                duration={500}
+                offset={50}
+                smooth={true}
+                spy={true}
+                to={item.path}
+              >
+                {item.label}
+              </Link>
+            ))}
+          </Flex>
           <Text sx={styles.footer.copyright}>
             Copyright by {new Date().getFullYear()} Startplace
           </Text>
