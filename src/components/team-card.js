@@ -41,7 +41,7 @@ const styles = {
         color: "primary",
       },
       ".info__designation": {
-        color: "primary",
+        color: "muted",
       },
       ".social__share": {
         opacity: 1,
@@ -76,7 +76,7 @@ const styles = {
       fontSize: ["14px", null, null, 2],
       fontWeight: "body",
       lineHeight: "heading",
-      color: "text",
+      color: "muted",
       transition: "color 0.25s",
     },
   },

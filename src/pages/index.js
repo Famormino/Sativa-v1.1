@@ -26,6 +26,7 @@ export default function IndexPage() {
         <Banner />
         <CoreFeature />
         <ServiceSection />
+        <TeamSection />
         <Feature />
         <Package />
         <TestimonialCard />

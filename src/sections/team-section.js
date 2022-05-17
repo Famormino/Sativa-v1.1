@@ -17,7 +17,7 @@ const data = [
     imgSrc: Member1,
     altText: "Florencia Consiglio",
     title: "Florencia Consiglio",
-    designation: "Founder",
+    designation: "Lic. kinesiología esp. Estética & Founder",
     socialProfile: [
       {
         id: 1,
@@ -44,7 +44,7 @@ const data = [
     imgSrc: Member2,
     altText: "Damian Scha",
     title: "Damian Scha",
-    designation: "Founder",
+    designation: "Microblading Master & Founder",
     socialProfile: [
       {
         id: 1,
