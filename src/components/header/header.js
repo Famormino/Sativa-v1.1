@@ -29,7 +29,14 @@ export default function Header({className}) {
           ))}
         </Flex>
         <Button aria-label="Get Started" className="donate__btn" variant="secondary">
-          Contáctanos
+          <a
+            href="https://wa.me/+34625941139?text=Hola Sativa, tengo la siguiente consulta para uds."
+            rel="noreferrer"
+            target="_blank"
+          >
+            {" "}
+            Contáctanos{" "}
+          </a>
         </Button>
         <MobileDrawer />
       </Container>
@@ -63,6 +70,16 @@ const styles = {
     transition: "all 0.4s ease",
     animation: `${positionAnim} 0.4s ease`,
     ".donate__btn": {
+      "&:hover": {
+        backgroundColor: "muted",
+      },
+      "&.active": {
+        backgroundColor: "transparent",
+      },
+      a: {
+        color: "primary",
+        textDecoration: "none",
+      },
       flexShrink: 0,
       mr: [15, 20, null, null, 0],
       ml: ["auto", null, null, null, 0],

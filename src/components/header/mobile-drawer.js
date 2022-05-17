@@ -4,26 +4,22 @@ import {Scrollbars} from "react-custom-scrollbars";
 import Drawer from "components/drawer";
 import {IoMdClose, IoMdMenu} from "react-icons/io";
 import {Link} from "react-scroll";
-import {FaFacebookF, FaTwitter, FaGithubAlt, FaDribbble} from "react-icons/fa";
+import {FaFacebookF, FaInstagram, FaGithubAlt, FaDribbble, FaWhatsapp} from "react-icons/fa";
 
 import menuItems from "./header.data";
 
 const social = [
   {
-    path: "/",
+    path: "https://www.facebook.com/Makeupsativarosario",
     icon: <FaFacebookF />,
   },
   {
-    path: "/",
-    icon: <FaTwitter />,
+    path: "https://www.instagram.com/micropigmentacionsativa/?hl=es-la",
+    icon: <FaInstagram />,
   },
   {
-    path: "/",
-    icon: <FaGithubAlt />,
-  },
-  {
-    path: "/",
-    icon: <FaDribbble />,
+    path: "https://wa.me/+34625941139?text=Hola Sativa, tengo la siguiente consulta para uds.",
+    icon: <FaWhatsapp />,
   },
 ];
 
@@ -65,7 +61,9 @@ export default function MobileDrawer() {
             <Box sx={styles.social}>
               {social.map((socialItem, i) => (
                 <Box key={i} as="span" sx={styles.social.icon}>
-                  <Link to={socialItem.path}>{socialItem.icon}</Link>
+                  <a href={socialItem.path} rel="noreferrer" target="_blank">
+                    {socialItem.icon}
+                  </a>
                 </Box>
               ))}
             </Box>
@@ -123,6 +121,7 @@ const styles = {
     flexDirection: "column",
 
     a: {
+      textDecoration: "underline overline",
       fontSize: "16px",
       fontWeight: "500",
       color: "text_white",
