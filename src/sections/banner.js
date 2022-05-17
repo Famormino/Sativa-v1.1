@@ -2,13 +2,7 @@
 import {jsx} from "theme-ui";
 import {Container, Box, Heading, Text, Image, Button} from "theme-ui";
 import BannerImg from "assets/banner-thumb.gif";
-import ShapeLeft from "assets/shape-left.png";
-import ShapeRight from "assets/shape-right.png";
 import LogoSativa from "assets/sativalogo.png";
-import LogoFacebook from "assets/socialmedia/facebook.svg";
-import LogoInstagram from "assets/socialmedia/instagram.svg";
-import LogoTwitter from "assets/socialmedia/twitter.svg";
-import LogoYoutube from "assets/socialmedia/youtube.svg";
 
 export default function Banner() {
   return (
@@ -46,7 +40,6 @@ const styles = {
       height: "100%",
       width: "100%",
       zIndex: -1,
-      backgroundImage: `url(${ShapeLeft})`,
       backgroundRepeat: `no-repeat`,
       backgroundPosition: "bottom left",
       backgroundSize: "36%",
@@ -59,7 +52,6 @@ const styles = {
       height: "100%",
       width: "100%",
       zIndex: -1,
-      backgroundImage: `url(${ShapeRight})`,
       backgroundRepeat: `no-repeat`,
       backgroundPosition: "bottom right",
       backgroundSize: "32%",
