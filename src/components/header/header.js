@@ -77,11 +77,12 @@ const styles = {
         backgroundColor: "transparent",
       },
       a: {
+        fontWeight: "700",
         color: "primary",
         textDecoration: "none",
       },
       flexShrink: 0,
-      mr: [15, 20, null, null, 0],
+      mr: [10, 20, null, null, 0],
       ml: ["auto", null, null, null, 0],
     },
     "&.sticky": {
@@ -110,7 +111,7 @@ const styles = {
       display: "block",
     },
     a: {
-      fontSize: 6,
+      fontSize: 7,
       fontWeight: "body",
       px: 5,
       cursor: "pointer",

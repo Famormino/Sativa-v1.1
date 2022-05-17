@@ -121,8 +121,7 @@ const styles = {
     flexDirection: "column",
 
     a: {
-      textDecoration: "underline overline",
-      fontSize: "16px",
+      fontSize: "18px",
       fontWeight: "500",
       color: "text_white",
       py: "15px",
@@ -153,11 +152,15 @@ const styles = {
     justifyContent: "center",
 
     icon: {
+      a: {
+        color: "primary",
+      },
+      color: "primary",
       display: "flex",
       alignItems: "center",
       justifyContent: "center",
       color: "text",
-      fontSize: 14,
+      fontSize: 20,
       mr: "15px",
       transition: "all 0.25s",
       cursor: "pointer",
