@@ -41,7 +41,7 @@ const styles = {
     },
 
     subTitle: {
-      fontSize: [1, "15px"],
+      fontSize: [1, "22px"],
       fontWeight: 400,
       lineHeight: "1.9",
     },

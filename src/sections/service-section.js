@@ -196,7 +196,7 @@ const styles = {
     textAlign: "left",
     mt: "-5px",
     title: {
-      fontSize: 3,
+      fontSize: 4,
       color: "heading_secondary",
       lineHeight: 1.4,
       fontWeight: 700,
@@ -204,7 +204,7 @@ const styles = {
     },
 
     subTitle: {
-      fontSize: [1, null, null, "14px", 1],
+      fontSize: [1, null, null, "14px", 3],
       fontWeight: 400,
       lineHeight: 1.9,
     },
